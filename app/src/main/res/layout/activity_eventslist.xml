@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".eventslist">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event List"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+    <LinearLayout
+        android:id="@+id/weddingLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@id/birthdayLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView">
+
+        <ImageView
+            android:id="@+id/weddingImageView"
+            android:layout_width="190dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="Wedding Image"
+            android:scaleType="fitXY"
+            android:src="@drawable/wedding" />
+
+        <TextView
+            android:id="@+id/weddingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wedding"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/birthdayLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/weddingLayout"
+        app:layout_constraintTop_toTopOf="@id/weddingLayout">
+
+        <ImageView
+            android:id="@+id/birthdayImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/birthday"
+            android:adjustViewBounds="true"
+            android:layout_weight="1"
+            android:contentDescription="Birthday Image"/>
+
+        <TextView
+            android:id="@+id/birthdayTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Birthday"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/exhibitionLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@id/concertLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weddingLayout">
+
+        <ImageView
+            android:id="@+id/exhibitionImageView"
+            android:layout_width="190dp"
+            android:layout_height="153dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="Exhibition Image"
+            android:scaleType="fitXY"
+            android:src="@drawable/exhibition" />
+
+        <TextView
+            android:id="@+id/exhibitionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exhibition"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/concertLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/exhibitionLayout"
+        app:layout_constraintTop_toTopOf="@id/exhibitionLayout">
+
+        <ImageView
+            android:id="@+id/concertImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/concert"
+            android:adjustViewBounds="true"
+            android:layout_weight="1"
+            android:contentDescription="Concert Image"/>
+
+        <TextView
+            android:id="@+id/concertTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Concert"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/corporateLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@id/sportLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exhibitionLayout">
+
+        <ImageView
+            android:id="@+id/corporateImageView"
+            android:layout_width="189dp"
+            android:layout_height="184dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="Corporate Image"
+            android:scaleType="fitXY"
+            android:src="@drawable/corporate" />
+
+        <TextView
+            android:id="@+id/corporateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Corporate"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sportLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/corporateLayout"
+        app:layout_constraintTop_toTopOf="@id/corporateLayout">
+
+        <ImageView
+            android:id="@+id/sportImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sport"
+            android:adjustViewBounds="true"
+            android:layout_weight="1"
+            android:contentDescription="Sport Image"/>
+
+        <TextView
+            android:id="@+id/sportTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sport"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GALA-GALA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/eventListImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/bookingsImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintBottom_toTopOf="@id/supportImageView"
+        app:srcCompat="@drawable/eventlist" />
+
+    <TextView
+        android:id="@+id/eventListTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event List"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/eventListImageView"
+        app:layout_constraintStart_toStartOf="@id/eventListImageView"
+        app:layout_constraintEnd_toEndOf="@id/eventListImageView"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/bookingsImageView"
+        android:layout_width="196dp"
+        android:layout_height="203dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/extrasImageView"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/eventListImageView"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:srcCompat="@drawable/bookings" />
+
+    <TextView
+        android:id="@+id/bookingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Bookings"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/bookingsImageView"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@id/bookingsImageView"
+        app:layout_constraintTop_toBottomOf="@id/bookingsImageView" />
+
+    <ImageView
+        android:id="@+id/supportImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/extrasImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eventListImageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/support" />
+
+    <TextView
+        android:id="@+id/supportTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Support"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/supportImageView"
+        app:layout_constraintStart_toStartOf="@id/supportImageView"
+        app:layout_constraintEnd_toEndOf="@id/supportImageView"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/extrasImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/supportImageView"
+        app:layout_constraintTop_toBottomOf="@id/bookingsImageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/extras1" />
+
+    <TextView
+        android:id="@+id/extrasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extras"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/extrasImageView"
+        app:layout_constraintStart_toStartOf="@id/extrasImageView"
+        app:layout_constraintEnd_toEndOf="@id/extrasImageView"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

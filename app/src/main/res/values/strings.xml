@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MakeEventsEasy</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="mee_make_events_easy">MEE - Make Events Easy</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="select_event_type">Select Event Type</string>
+    <string name="email_galagala_gmail_com">Email: galagala@gmail.com</string>
+    <string name="contact_details">Contact Details:</string>
+    <string name="support">Support</string>
+    <string name="phone_7904677091">Phone: 7904677091</string>
+    <string name="frequently_asked_questions">Frequently Asked Questions:</string>
+    <string name="q_what_services_do_you_offer">Q: What services do you offer?</string>
+    <string name="a_we_offer_event_management_and_handling_services">A: We offer event management and handling services.</string>
+    <string name="q_how_can_i_contact_support">Q: How can I contact support?</string>
+    <string name="a_you_can_email_us_at_galagala_gmail_com_or_call_us_at_7904677091">A: You can email us at galagala@gmail.com or call us at 7904677091.</string>
+    <string name="view_bookings">View Bookings</string>
+    <string-array name="event_types">
+        <item>Wedding</item>
+        <item>Corporate Event</item>
+        <item>Sports Event</item>
+        <item>Exhibition</item>
+        <item>Birthday Function</item>
+        <item>Concert</item>
+    </string-array>
+</resources>
