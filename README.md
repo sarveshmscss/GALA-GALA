@@ -46,7 +46,7 @@ This system ensures efficient event organization and booking management from bot
 ### **Steps:**
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/GALA-GALA-Event-Management-App.git
+   git clone https://github.com/sarveshmscss/GALA-GALA.git
    ```
 2. **Open the project** in Android Studio.
 3. **Run the project** on an emulator or an Android device.
